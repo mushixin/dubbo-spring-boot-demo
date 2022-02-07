@@ -12,7 +12,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * @author azizwz@aliyun.com
  *         Function:
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.azi.demo.service.controller")
 @MapperScan("com.azi.demo.service.dao")
 @DubboComponentScan("com.azi.demo.service.impl")
 public class DemoProvider {

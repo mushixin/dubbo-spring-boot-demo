@@ -23,6 +23,11 @@ spring:
       remove-abandoned: true
       remove-abandoned-timeout: 1800
       log-abandoned: true
+  server:
+    port: 8080
+  management:
+    server:
+      port: 8081
 
 #dubbo config
 dubbo:
@@ -51,3 +56,7 @@ management:
 #mybatis config
 mybatis:
   mapper-locations: classpath:mybatis/*.xml
+
+logging:
+  level:
+    root: info

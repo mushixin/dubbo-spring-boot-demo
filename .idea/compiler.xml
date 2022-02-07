@@ -11,8 +11,5 @@
         <module name="demo-web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="dubbo-spring-boot-demo" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
