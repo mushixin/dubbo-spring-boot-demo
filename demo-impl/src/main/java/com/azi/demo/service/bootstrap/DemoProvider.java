@@ -1,7 +1,9 @@
 package com.azi.demo.service.bootstrap;
 
+import com.alibaba.dubbo.config.spring.ServiceBean;
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -16,6 +18,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class DemoProvider {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(DemoProvider.class).web(WebApplicationType.NONE).run(args);
+//        new SpringApplicationBuilder(DemoProvider.class).web(WebApplicationType.NONE).run(args);
+        try{
+            SpringApplication.run(DemoProvider.class, args);
+
+
+        }catch (Throwable t){
+            t.printStackTrace();
+        }
     }
 }
